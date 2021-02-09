@@ -1,0 +1,209 @@
+body {
+    background-image: url("calculator.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    min-height: 100vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer {
+    margin-top: auto !important;
+    padding: 0;
+    background-color: #ecb29f;
+    color: white;
+}
+
+header {
+    margin-bottom: auto;
+    padding: 0;
+    background-color: #ecb29f;
+}
+
+h1 {
+    color: white !important;
+}
+
+#calculator {
+    height: 650px;
+    width: 450px;
+    background: linear-gradient(90deg, #808080, #666666);
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 24px 0px;
+    -webkit-box-shadow: 10px 7px 18px -7px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 10px 7px 18px -7px rgba(0, 0, 0, 0.53);
+    box-shadow: 10px 7px 18px -7px rgba(0, 0, 0, 0.53);
+
+}
+
+#calculatorDisplay {
+    max-width: 100%;
+    margin: 0 24px;
+    height: 110px;
+    background: linear-gradient(90deg, #f9f9f9, #d8d8d8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculatorButtons {
+    max-width: 100%;
+    margin: 24px 24px;
+    padding: 0;
+    height: 468px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 24px 24px;
+    grid-template-areas:
+        "clear clear division multiplication"
+        "seven eight nine subtraction"
+        "four five six addition"
+        "one two three equals"
+        "zero zero decimal equals";
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#equals {
+    grid-area: equals;
+}
+
+#division {
+    grid-area: division;
+}
+
+#multiplication {
+    grid-area: multiplication;
+}
+
+#subtraction {
+    grid-area: subtraction;
+}
+
+#addition {
+    grid-area: addition;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#calculatorButtons div {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.operator {
+    background-color: #d9fbbe;
+    padding-bottom: 7px;
+    /* offset, operators were off center */
+}
+
+.operator:hover {
+    background-color: #d9fbbeda;
+}
+
+.digit {
+    background-color: #fbe7b6;
+}
+
+.digit:hover {
+    background-color: #fbe7b6e1;
+}
+
+.digit,
+.operator {
+    -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.25);
+}
+
+.operator:active,
+.digit:active {
+    -webkit-box-shadow: inset 0px 3px 5px -1px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: inset 0px 3px 5px -1px rgba(0, 0, 0, 0.54);
+    box-shadow: inset 0px 3px 5px -1px rgba(0, 0, 0, 0.54);
+    padding-top: 5px;
+}
+
+.operator:active {
+    background-color: #d9fbbebe;
+}
+
+.digit:active {
+    background-color: #fbe7b6c7;
+}
+
+a .img {
+    background: url("github-logo.svg")
+}
+
+a .img:hover {
+    background: url("github-logo-grey.svg")
+}
+
+#output {
+    width: 90%;
+    font-size: 50px;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: #767676;
+}
